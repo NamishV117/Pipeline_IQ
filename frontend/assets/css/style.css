@@ -316,6 +316,21 @@ body {
 }
 .btn-theme-toggle:hover { border-color: var(--purple); color: var(--purple); }
 
+.role-switcher {
+  padding: 6px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--fg-muted);
+  font-size: 0.78rem;
+  font-family: var(--font);
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.role-switcher:hover, .role-switcher:focus { border-color: var(--purple); color: var(--fg); }
+html[data-theme="light"] .role-switcher { background: #f5f6fa !important; border-color: #d1d5db !important; color: #5a6278 !important; }
+
 /* ═══════════ SCOPE BAR ═══════════ */
 .scope-bar {
   display: flex;

@@ -105,6 +105,31 @@ function quickLogin(username, password) {
   document.getElementById("login-form").dispatchEvent(new Event("submit"));
 }
 
+// ── Role Switcher (Demo) ──
+const ROLE_CREDS = {
+  headoffice: { username: "headoffice", password: "admin123" },
+  mumbai_stk: { username: "mumbai_stk", password: "stock123" },
+  andheri_dist: { username: "andheri_dist", password: "dist123" },
+  quickmart: { username: "quickmart", password: "retail123" },
+};
+
+async function switchRole(key) {
+  if (!key) return;
+  const cred = ROLE_CREDS[key];
+  if (!cred) return;
+  try {
+    const data = await API.login(cred.username, cred.password);
+    currentUser = data.user;
+    currentEntity = data.entity;
+    showDashboard();
+    // Reset dropdown
+    const sel = document.getElementById("role-switcher");
+    if (sel) sel.value = "";
+  } catch (err) {
+    showToast("Failed to switch role: " + err.message, "error");
+  }
+}
+
 // ── Theme Toggle ──
 function toggleTheme() {
   const html = document.documentElement;

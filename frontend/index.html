@@ -83,6 +83,13 @@
         </button>
       </div>
       <div class="topbar-right">
+        <select class="role-switcher" id="role-switcher" onchange="switchRole(this.value)" title="Switch Role (Demo)">
+          <option value="">Switch Role...</option>
+          <option value="headoffice">🏢 Head Office</option>
+          <option value="mumbai_stk">📦 Mumbai Stockist</option>
+          <option value="andheri_dist">🚚 Andheri Distributor</option>
+          <option value="quickmart">🏪 QuickMart Retailer</option>
+        </select>
         <div class="user-profile">
           <div class="user-avatar" id="topbar-avatar">ED</div>
           <div class="user-meta">
