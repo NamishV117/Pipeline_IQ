@@ -84,6 +84,48 @@ html[data-theme="light"] .divider { border-color: #e2e4ea !important; }
 html[data-theme="light"] .tree-node:hover { background: rgba(168,85,247,0.04) !important; }
 html[data-theme="light"] .toast { box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important; }
 
+/* Light mode — text and inline style overrides for JS-rendered content */
+html[data-theme="light"] .kpi-delta { color: #5a6278; }
+html[data-theme="light"] .kpi-delta.good { color: #059669 !important; }
+html[data-theme="light"] .kpi-delta.bad { color: #dc2626 !important; }
+html[data-theme="light"] .kpi-delta.warn { color: #d97706 !important; }
+html[data-theme="light"] .kpi-delta.neutral { color: #6b7280 !important; }
+html[data-theme="light"] .kpi-icon { opacity: 0.9; }
+html[data-theme="light"] .chart-subtitle { color: #6b7280 !important; }
+html[data-theme="light"] .chart-badge { background: rgba(168,85,247,0.08) !important; border-color: rgba(168,85,247,0.2) !important; }
+html[data-theme="light"] .alert-time { color: #9ca3af !important; }
+html[data-theme="light"] .alert-badge { opacity: 0.9; }
+html[data-theme="light"] .section-subtitle { color: #9ca3af !important; }
+html[data-theme="light"] .stockist-top .stockist-id { opacity: 0.85; }
+html[data-theme="light"] .stockist-status { opacity: 0.9; }
+html[data-theme="light"] .metric-label { color: #6b7280 !important; }
+html[data-theme="light"] .btn-drill { color: #7c3aed !important; }
+html[data-theme="light"] .btn-drill:hover { color: #a855f7 !important; }
+html[data-theme="light"] .fill-bar { background: #e2e4ea !important; }
+html[data-theme="light"] .status-pill { opacity: 0.9; }
+html[data-theme="light"] .copilot-avatar { background: #f0f1f5 !important; border-color: #d1d5db !important; }
+html[data-theme="light"] .copilot-msg.user .copilot-bubble { background: rgba(168,85,247,0.08) !important; color: #1a1b25 !important; }
+html[data-theme="light"] .activity-time { color: #9ca3af !important; }
+html[data-theme="light"] .activity-empty { color: #9ca3af !important; }
+html[data-theme="light"] .brand-name { color: #1a1b25 !important; }
+html[data-theme="light"] .brand-subtitle { color: #9ca3af !important; }
+html[data-theme="light"] .user-meta .user-entity { color: #6b7280 !important; }
+html[data-theme="light"] .login-tagline { color: #6b7280 !important; }
+html[data-theme="light"] .login-card h1 { color: #1a1b25 !important; }
+html[data-theme="light"] .demo-creds { background: rgba(168,85,247,0.03) !important; border-color: #e2e4ea !important; }
+html[data-theme="light"] .demo-creds h4 { color: #6b7280 !important; }
+html[data-theme="light"] .cred-row:hover { background: rgba(168,85,247,0.06) !important; }
+html[data-theme="light"] .cred-info code { color: #7c3aed !important; }
+html[data-theme="light"] .cred-sep { color: #9ca3af !important; }
+html[data-theme="light"] .loading { color: #6b7280 !important; }
+html[data-theme="light"] .placeholder p { color: #6b7280 !important; }
+html[data-theme="light"] .placeholder h2 { color: #1a1b25 !important; }
+html[data-theme="light"] .tree-node span[style*="color:#fff"] { color: #1a1b25 !important; }
+html[data-theme="light"] .modal-overlay { background: rgba(0,0,0,0.4) !important; }
+html[data-theme="light"] .login-error { color: #dc2626 !important; }
+html[data-theme="light"] .hero-banner::before { background: linear-gradient(90deg, #7c3aed, #a855f7, #22d3ee) !important; }
+html[data-theme="light"] .login-card::before { background: linear-gradient(90deg, #7c3aed, #a855f7, #22d3ee) !important; }
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
